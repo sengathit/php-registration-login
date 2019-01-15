@@ -1,7 +1,6 @@
 <?php
     require_once('./db/config.php');
     require_once('./includes/header.inc.php') ; 
-
     $username = $password = $confirm_password = '';
     $username_err = $password_err = $confirm_password_err = '';
 
@@ -61,8 +60,8 @@
                     echo 'Something went wrong.  Please try again later.';
                 }
             }
-
-            unset($stmt);
+ 
+            unset($stmt); 
         }
 
         unset($pdo);
