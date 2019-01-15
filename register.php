@@ -11,7 +11,7 @@
             $sql = 'SELECT id FROM users WHERE username = :username';
             if($stmt = $pdo->prepare($sql)){
                 $stmt->bindParam(':username',$param_username,PDO::PARAM_STR);
-                $param_username = trim($POST['username']);
+                $param_username = trim($POST['username']); 
 
                 if($stmt->execute()){
                     if($stmt->rowCount() == 1){
